@@ -34,3 +34,7 @@ As previously stated, Engsource ignores Middle English as a potential etymologic
 ### Compound words
 
 When extracting the etymology of a compound word, Engsource looks at the [head](https://en.wikipedia.org/wiki/Head_(linguistics)) of the compound word in question. For example, when extracting the etymology of the compound word "birdsong", Engsource will return a `lemma` of "song", since a "birdsong" is a type of "song", and not a type of "bird".
+
+## Testing
+
+Run `npm test PAGE_ID` to test the subroutines used in the `npm run extract` script, with `PAGE_ID` replaced with the Wiktionary Page ID of the entry you wish to examine (this ID can be found by going to a particular entry's Wiktionary page and clicking the "Page Information" link in the left-hand sidebar).

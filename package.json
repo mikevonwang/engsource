@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "split": "node xml-splitter.js",
-    "extract": "node wikitext-extractor.js"
+    "extract": "node wikitext-extractor.js",
+    "test": "node utilities.spec.js"
   },
   "repository": {
     "type": "git",
