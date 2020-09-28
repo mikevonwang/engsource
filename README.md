@@ -30,4 +30,4 @@ As previously stated, Englisc ignores Middle English as a potential etymologic s
 
 ### Compound words
 
-When extracting the etymology of a compound word, Englisc looks at the [head](https://en.wikipedia.org/wiki/Head_(linguistics) of the compound word in question. For example, when extracting the etymology of the compound word "birdsong", Englisc will return a `lemma` of "song", since a "birdsong" is a type of "song", and not a type of "bird".
+When extracting the etymology of a compound word, Englisc looks at the [head](https://en.wikipedia.org/wiki/Head_(linguistics)) of the compound word in question. For example, when extracting the etymology of the compound word "birdsong", Englisc will return a `lemma` of "song", since a "birdsong" is a type of "song", and not a type of "bird".
