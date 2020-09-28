@@ -1,0 +1,27 @@
+{
+  "name": "englisc",
+  "version": "1.0.0",
+  "description": "Extracts etymology data from Wiktionary",
+  "main": "app.js",
+  "scripts": {
+    "split": "node xml-splitter.js",
+    "extract": "node wikitext-extractor.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikevonwang/englisc.git"
+  },
+  "author": {
+    "name": "Mike Wang",
+    "email": "mikevonwang@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "progress": "^2.0.3",
+    "xml-stream": "^0.4.5"
+  },
+  "keywords": [
+    "etymology",
+    "wiktionary"
+  ]
+}
