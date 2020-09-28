@@ -38,3 +38,7 @@ When extracting the etymology of a compound word, Engsource looks at the [head](
 ## Testing
 
 Run `npm test PAGE_ID` to test the subroutines used in the `npm run extract` script, with `PAGE_ID` replaced with the Wiktionary Page ID of the entry you wish to examine (this ID can be found by going to a particular entry's Wiktionary page and clicking the "Page Information" link in the left-hand sidebar).
+
+## In The Wild
+
+The etymology tool [englisc.mikevonwang.com](https://englisc.mikevonwang.com) uses Engsource for its etymologic data.
