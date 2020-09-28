@@ -11,8 +11,14 @@ process.on('uncaughtException', (error) => {
    console.log('');
 });
 
+if (!fs.existsSync('./entries')) {
+  console.error('\x1b[31mERR!\x1b[0m The folder "./entries" doesn’t exist. Make sure to run the splitting script first.');
+  console.log('');
+  return;
+}
+
 const files = fs.readdirSync('./entries');
-const bar = new ProgressBar('working... :bar :rate/wps :percent :etas', {
+const bar = new ProgressBar('working... [:bar] :rate/wps :percent :etas', {
   width: 30,
   incomplete: ' ',
   total: files.length,
@@ -37,8 +43,8 @@ for (let i=0; i<files.length; i++) {
   }
 }
 
-console.log('writing...');
-fs.writeFileSync(`../dist/db/dictionary.json`, JSON.stringify(dictionary));
+console.log('writing to "./results.json"...');
+fs.writeFileSync(`./results.json`, JSON.stringify(dictionary));
 console.log('done!\n');
 
 function getEnglishContent(text) {

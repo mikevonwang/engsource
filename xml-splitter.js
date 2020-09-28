@@ -17,10 +17,14 @@ if (process.argv.length < 3) {
   return;
 }
 
+if (!fs.existsSync('./entries')) {
+  fs.mkdirSync('./entries');
+}
+
 const stream = fs.createReadStream(process.argv[2]);
 const xml = new XmlStream(stream);
 
-const bar = new ProgressBar('working... :bar :rate/wps :percent :etas', {
+const bar = new ProgressBar('working... [:bar] :rate/wps :percent :etas', {
   width: 30,
   incomplete: ' ',
   total: 770000,
