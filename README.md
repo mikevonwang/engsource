@@ -41,4 +41,4 @@ Run `npm test PAGE_ID` to test the subroutines used in the `npm run extract` scr
 
 ## In The Wild
 
-The etymology tool [englisc.mikevonwang.com](https://englisc.mikevonwang.com) uses Engsource for its etymologic data.
+The etymology tool [englisc.mikeahlgrim.com](https://englisc.mikeahlgrim.com) uses Engsource for its etymologic data.
