@@ -15,7 +15,7 @@ The main workflow for using Engsource is split into two different scripts; a slo
 
 1. [Download](https://dumps.wikimedia.org/enwiktionary/) an XML dump of the page contents of the English-language Wiktionary. Look for the file whose name contains the string "pages-meta-current". The unzipped file will be several gigabytes.
 2. Run the command `npm run split PATH_TO_FILE`, with `PATH_TO_FILE` replaced by the path to the XML file you downloaded and unzipped in step 1. Engsource will split out each Wiktionary entry from the XML file into its own file under the folder `./entries`; there will be thus be nearly 800,000 files. This step will take around 30 minutes to complete, depending on your machine.
-3. Run the command `npm run extract`. Engsource will extract etymology data from the files in `./entries`, and write them to the file `./results.json`. This file will be around 20 Mb. This step will take around 3 minutes to complete, again depending on your machine.
+3. Run the command `npm run extract`. Engsource will extract etymology data from the files in `./entries`, and write them to the file `./results.json`. This file will be around 20 MB. This step will take around 3 minutes to complete, again depending on your machine.
 
 ## Schema of Results
 
